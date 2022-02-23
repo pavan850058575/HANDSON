@@ -1,0 +1,27 @@
+package com.org.gen.day2HandsOn;
+class Member
+{
+	String Namae;
+	int age;
+	int phno;
+	String Address;
+	float sal;
+}
+class Employee extends Member
+{
+   String specialization;
+   
+   
+}
+class Manager extends Member
+{
+	String Department;
+}
+public class ques2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+       
+	}
+
+}

@@ -1,0 +1,5 @@
+select distinct(associate_status.trainer_id) from associate_status join trainer_info on associate_status.trainer_id=trainer_info.trainer_id where trainer_info.trainer_name like '%%I%%';
+select distinct(associate_status.trainer_id) from associate_status join trainer_info on associate_status.trainer_id=trainer_info.trainer_id where trainer_info.trainer_name not like '%%I%%';
+select trainer_feedback.trainer_id,trainer_feedback.trainer_rating from trainer_feedback join associate_status on trainer_feedback.module_id=associate_status.module_id where associate_status.module_id='J2EE';
+
+select trainer_feedback.trainer_id , trainer_feedback.Batch_Iid from trainer_feedback join batch_info on trainer_feedback.Batch_Iid=batch_info.batch_id;
